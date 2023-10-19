@@ -2,10 +2,10 @@
 import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-import { author_routes } from './api/routes/author_routes.js'
-import { owner_routes } from './api/routes/owner_routes.js';
-import { bookstore_routes } from './api/routes/bookstore_routes.js';
-import { bookroutes } from './api/routes/book_routes.js';
+import { author_routes } from './server/routes/author_routes.js'
+import { owner_routes } from './server/routes/owner_routes.js';
+import { bookstore_routes } from './server/routes/bookstore_routes.js';
+import { bookroutes } from './server/routes/book_routes.js';
 
 const PORT = 9000;
 const app = express()

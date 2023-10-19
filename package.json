@@ -1,4 +1,8 @@
 {
+    "description": "This project is a backend application built with Node.js that serves as the foundation for a bookstore management system. It provides a set of APIs to manage owners, bookstores, books, and authors.",
+    "type": "module",
+    "main": "index.js",
+    "author": "miirshe",
     "scripts": {
         "start": "nodemon index.js",
         "prisma-migrate": "npx prisma migrate dev",
