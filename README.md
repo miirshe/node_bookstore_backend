@@ -50,7 +50,7 @@ MESSAGE : `Something Went Wrong Try Again...`
 ````
 
 ````markdown
-Owner Token Is : `ownerToken` storage browser cookies storage
+Owner Token Is : `ownerToken` stores browser cookies storage
 ````
 
 
@@ -102,7 +102,7 @@ MESSAGE : `Something Went Wrong Try Again...`
 ````
 
 ````markdown
-Author Token Is : `authorToken` storage browser cookies storage
+Author Token Is : `authorToken` stores browser cookies storage
 ````
 
 
