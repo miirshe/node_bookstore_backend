@@ -1,7 +1,7 @@
 import joi from 'joi'
 export const ownervalidation = (req, res, next) => {
     const ownervalidate = joi.object({
-        name: joi.string().min(10).max(30).required(),
+        username: joi.string().min(5).max(30).required(),
         email: joi.string().email().required(),
         password: joi.string().min(8).max(15).required()
     })
