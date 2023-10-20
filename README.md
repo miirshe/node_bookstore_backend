@@ -11,7 +11,7 @@
 ````
 
 
-## Owner:
+## Owner :
 
 ``Owner Endpoints`` 
 ````markdown
@@ -21,6 +21,16 @@
 4.``DELETE Owner ``     api/owner/:id
 5.``GET Current Owner`` api/current/owner
 ````
+## Response :
+`` if you want to new  create owner and enter email already exist the response you get is : 
+```
+res.status(409).json({
+status : false,
+message : 'user already exists'
+})
+```
+
+``
 ## Owner Fields :
 
 |  Parameter    |  Type   |    Required  |   Description  |
