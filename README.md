@@ -49,6 +49,10 @@ STATUS CODE : `404`,
 MESSAGE : `Something Went Wrong Try Again...`
 ````
 
+````markdown
+Owner Token Is : `ownerToken` storage browser cookies storage
+````
+
 
 ## Owner Fields :
 
@@ -95,6 +99,10 @@ MESSAGE : `Invalid Email or Password`
 ````markdown
 STATUS CODE : `404`,
 MESSAGE : `Something Went Wrong Try Again...`
+````
+
+````markdown
+Author Token Is : `authorToken` storage browser cookies storage
 ````
 
 
