@@ -26,15 +26,20 @@
 
 #### if you want to create new owner and enter email already exist the response you get is : 
 
-```
-res.status(409).json({
-status : false,
-message : 'user already exists'
-})
 
-```
+|  Status Code      |  Message                | 
+|  -----------------|-------------------------|
+|  `404`            | `User Already exists `  |
 
-``
+
+#### if you want to login owner and enter email or password not exists into the db  the response you get is : 
+
+
+|  Status Code      |  Message                      | 
+|  -----------------|-------------------------------|
+|  `404`            | `Invalid Email or Password `  |
+
+
 ## Owner Fields :
 
 |  Parameter    |  Type   |    Required  |   Description  |
