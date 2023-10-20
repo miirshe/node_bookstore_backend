@@ -3,6 +3,7 @@
 
 
 ## Features :
+
 ````markdown
 1.Owner likes register, login, update, delete, fetch
 2.Author like register, login, update, delete, fetch
@@ -22,22 +23,31 @@
 5.``GET Current Owner`` api/current/owner
 ````
 
+
 ## Response :
 
-#### if you want to create new owner and enter email already exist the response you get is : 
+#### If You Want to Create New Owner and Enter ``Email`` Already Exist the Response You Get Is : 
+
+````markdown
+STATUS CODE : `404`,
+MESSAGE : `User Already exists`
+````
 
 
-|  Status Code      |  Message                | 
-|  -----------------|-------------------------|
-|  `404`            | `User Already exists `  |
+#### If You Want to Login Owner and Enter ``Email`` or ``Password`` Not Exists into the ``db``  the Response You Get Is : 
+
+````markdown
+STATUS CODE : `404`,
+MESSAGE : `Invalid Email or Password`
+````
 
 
-#### if you want to login owner and enter email or password not exists into the db  the response you get is : 
+#### If  Request Body Can Not Reach Into Prisma-client The Reaponse You Get Is : 
 
-
-|  Status Code      |  Message                      | 
-|  -----------------|-------------------------------|
-|  `404`            | `Invalid Email or Password `  |
+````markdown
+STATUS CODE : `404`,
+MESSAGE : `Something Went Wrong Try Again...`
+````
 
 
 ## Owner Fields :
@@ -47,6 +57,7 @@
 |  `Username`   | String  | True         | Owner Username 
 |  `Email`      | String  | True         | Owner Email only Unique
 |  `Password`   | String  | True         | Owner Password
+
 
 
 ## Author :
@@ -59,6 +70,34 @@
 4.`DELETE Author `     api/author/:id
 5.`GET Current Author` api/current/author
 ````
+
+
+## Response :
+
+#### If You Want to Create New Author and Enter ``Email`` Already Exist The Response You Get Is : 
+
+````markdown
+STATUS CODE : `404`,
+MESSAGE : `User Already exists`
+````
+
+
+#### If You Want to Login Author and Enter ``Email`` or ``Password`` Not Exists into the ``db``  the Response You Get Is : 
+
+```markdown
+STATUS CODE : `404`,
+MESSAGE : `Invalid Email or Password`
+```
+
+
+#### If  Request Body Can Not Reach Into Prisma-client The Reaponse You Get Is : 
+
+````markdown
+STATUS CODE : `404`,
+MESSAGE : `Something Went Wrong Try Again...`
+````
+
+
 ## Author Fields :
 
 |  Parameter    |  Type   |    Required  |   Description  |
